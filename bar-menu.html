@@ -1,0 +1,134 @@
+<!-- Q:1 - itilize le raccourcis pour inserer la squellette  de l'HTML-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+        body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Bar meni an navigation
+    
+    itilize :
+     - flex pou aliye tout pitit yo horizontal
+     - centrer les 3 e kite espas nan mitan yo
+     - santre tout item yo
+     -chanje koule fon an  avek joule:  121, 1, 1
+     - ajoute yon marge interne : haut / bas : 10px  goch dwat : 20px
+    */
+        .navigation {
+        display: flex;  
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(121, 1,1);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;      
+    }
+
+    /* Logo  :
+        - ogmante tay logo a 24px
+        mete style karakte a italic
+        - mete karakte yo en gras.
+    */
+    
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      font-style: italic;
+     }
+/* pataje ekran an 2 pou n eseye chak sa ke nou fe .
+- fe kapti kran chak etap yo.. 
+=kreye yon paj : galri kap afiche chak kapti erkran yo 
+- ba chak kapti yon tit ak yon deskripsyon 
+-dimansyon  300* 300px. kreye yon lyen kap pemet nou ale nan galri
+.  */
+
+
+    /* Meni navigasyon 
+     - mete lis la sou menm liy san n pa itilize inblock
+     -kreye espas (20px) antre yo san pa tilize margin ou padding
+     -elimine style list la.
+     mete margin ak padding : 0
+    */
+     .navigation-lien {
+   
+    }
+  
+    .navigation-lien li a {
+      color: white;
+      font-weight: bold;
+    }
+    .navigation-lien li a {
+        /* souligner les liens sur survole */
+        text-decoration: none;
+      
+    }
+
+
+    /* Bouton koneksyon 
+    changwer le curseur en pointeur
+    creer  un espace interne 8px goch dwat et 12px en haut en bas
+    - eliminer la bordure
+    
+    */
+     .btn-koneksyon{
+      background-color: white;
+      color: #0d6efd; 
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      padding-left: 8px;
+      padding-right: 8px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+
+    .btn-koneksyon:hover { 
+    /* changer la couleur de fond quand passer le curseur sur le bouton
+    couleur de fond : jaune
+    text : rouge */
+    background-color: yellow;
+    color: red;
+    } 
+  </style>
+ </head>
+ <body>
+ 
+    <nav class="navigation">
+      <div class="logo">Logo</div>
+  
+      <ul class="navigation-lien">
+        <li><a href="#">Akey</a></li>
+        <li><a href="#">A Propos</a></li>
+        <li><a href="#">Inscription</a></li>
+        <li><a href="#">Galerie</a></li>
+      </ul>
+  
+      <button class="btn-koneksyon">Koneksyon</button>
+    </nav>
+    
+ </body>
+ </html>
+
+<!--Q2 : en utilisant  L  Emmet (
+ Emmet la pemet nou itilize yon abreviation pou n ekri kod html ak css pi rapid ) -->
+<!--itilize Emmet pou antre 
+ a) yon klass container andan yon nav.( rezilta: <nav class="navigation")
+ b)ajoute yon div ki gen yon  class : logo( pou plase logo)
+ c)ajoute un liste Ordonnee san n pa itilize div. ba l klass : navigation-lien
+ d)ajoute yon bouton avek pou class : btn-koneksyon
+
+ -----list raccourcis code HtmL ( Emmet)
+  a : __________________
+  b : __________________
+  c :___________________
+  d : __________________
+-->
+'<!--verifye fichye devwa pou n we rezilta.'--->

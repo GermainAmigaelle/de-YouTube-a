@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .clss{
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+          .card{
+            width: 300px;
+            height: 270px;
+            border: solid 1px;
+        }
+        .card img{
+            height: 150px;
+            width: 100%;
+        }
+        .card div.a{
+            height: 150px;
+            width: 300px;
+            border: none;
+            margin-top: -5px;
+            display: flex;
+        }
+        .card div.a img{
+            height: 50px;
+            width: 50px;
+            border-radius: 50px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        .card div.a img{
+            cursor: pointer;
+        }
+        .card div.a div.text-video-description{
+            margin-left: 10px;
+        }
+        .card div.minute{
+             height: 20px;
+             width: 55px;
+             background-color: rgb(20, 19, 19);
+             color: white;
+             border-radius: 5px;
+             text-align: center;
+            position: absolute;
+            top: 120px;
+            left: 235px;
+             }
+             .bar-menu{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 10px;                
+             }
+             .recherche{
+                width: 50%;
+               margin-left: 250px;
+                display: flex;
+                flex: 1;                       
+             }
+             .bar-menu div.recherche div.imj input{
+                width: 650px;
+                height: 50px;
+                border-radius: 60px;
+                padding-left: 15px;
+                flex: 1;                          
+             }
+             .bar-menu div.recherche div.loupe {
+                left: 40px;
+             }
+             .image-profil:hover .modal{
+                opacity: 1;
+                cursor: pointer;
+             }
+
+             .modal{
+                border: solid 0.5px;
+                            position: absolute;
+                            margin-top: 35px; 
+                            display: flex;
+                            height: 80px;
+                            width: 290px;
+                            margin-left: 4px;
+                            border-radius: 10px;
+                            background-color:white;
+                            opacity: 0;
+                            border-color: rgb(114, 108, 108);
+                            
+             }
+             .notification{
+                margin-left: 250px;
+                margin-top: 10px;
+                color: rgb(156, 38, 38);
+                border-radius: 20px;
+                text-align: center;
+                flex-shrink: 0;
+                justify-content: space-between;             
+               }
+             .qtre{
+                height: 30px;
+                width: 30px;
+                background-color: blueviolet;
+                border-radius: 30px;
+                position: absolute;
+                color: rgb(156, 38, 38);
+                font-size: 30px;
+               margin-top: -10px;
+               margin-left: 25px;
+             }
+             .cer{
+                width: 30px;
+                height: 30px;
+                border-radius: 30px;
+                border: solid 5px;
+                
+             }
+             .bar-menu{
+                z-index: 100;
+        margin-left: 90px;
+        background-color: white;
+        position: fixed;      
+        top:0px;
+        bottom: 0px;
+        right: 10px;
+        left: 0px;
+        height: 55px;
+             }
+    </style>
+</head>
+<body style="padding-top: 65px;
+            padding-left: 110px;">
+    <div class="bar-menu"> 
+        <div class="logo"><img src="logo-youtube.png" alt=""></div>
+        <div class="recherche"> 
+            <div class="imj"><input class="inpt" type="text" placeholder="Rechercher"></div>                               
+            <div><img src="voice.png" alt=""></div>
+           
+        </div>
+                 <div class="notification">
+            <div class="qtre">4</div>
+            <div class="cer" ></div>
+         </div>
+        <div class="notifications"> <img src="connect.png" alt="">
+</div>           
+    </div> 
+        <div style="background-color: white;
+        position: fixed;
+        top: 10px;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        width: 55px;
+        justify-content: space-between;">
+            <div style="margin-bottom: 20px;"><img src="bar.png" alt=""></div>
+            <div style="margin-bottom: 20px;"><img src="accueil.png" alt=""></div>
+            <div style="margin-bottom: 20px;"><img src="shorts.png" alt=""></div>
+            <div style="margin-bottom: 20px;"><img src="abonnements.png" alt=""></div>
+            <div style="margin-bottom: 20px;"><img src="vous.png" alt=""></div>
+            <div style="margin-bottom: 20px;"><img src="historique.png" alt=""></div>
+        </div>
+    <div class="clss" style="position: relative;">
+          <div class="card" style="position: relative;">                      
+            <div><img src="imaj7.jpg" alt="" class="video-image" >
+             <div class="minute" style="position: absolute;">
+                1:20:29
+            </div>
+            </div>
+           
+        <div class="a">
+            <div class="image-profil">
+                 <div class="modal" >
+                        <div class="image-profil" >
+                <img style="height: 50px;
+                        width: 50px;
+                        border-radius: 50px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        margin-top: 10px;" src="imaj2.jpg" alt="">
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur.</p></div> 
+                <img src="imaj2.jpg" alt="">
+            </div>
+            <div class="text-video-description">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </p>
+                <p> Nunc viverra imperdiet enim.</p>
+            </div>
+        </div>
+        </div>
+        <div class="card" style="position: relative;">                      
+             <div><img src="imaj7.jpg" alt="" class="video-image" >
+             <div class="minute" style="position: absolute;">
+                1:20:29
+            </div>
+            </div>
+        <div class="a">
+            <div class="image-profil">
+                 <div class="modal" >
+                        <div class="image-profil" >
+                <img style="height: 50px;
+                        width: 50px;
+                        border-radius: 50px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        margin-top: 10px;" src="imaj2.jpg" alt="">
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur.</p></div> 
+                <img src="imaj2.jpg" alt="">
+            </div>
+            <div class="text-video-description">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </p>
+                <p> Nunc viverra imperdiet enim.</p>
+            </div>
+        </div>
+        </div>
+        <div class="card" style="position: relative;">                      
+            <div><img src="imaj7.jpg" alt="" class="video-image" >
+             <div class="minute" style="position: absolute;">
+                1:20:29
+            </div>
+            </div>
+        <div class="a">
+            <div class="image-profil">
+                 <div class="modal" >
+                        <div class="image-profil" >
+                <img style="height: 50px;
+                        width: 50px;
+                        border-radius: 50px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        margin-top: 10px;" src="imaj2.jpg" alt="">
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur.</p></div> 
+                <img src="imaj2.jpg" alt="">
+            </div>
+            <div class="text-video-description">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </p>
+                <p> Nunc viverra imperdiet enim.</p>
+            </div>
+        </div>
+        </div>
+        <div class="card" style="position: relative;">                      
+             <div><img src="imaj7.jpg" alt="" class="video-image" >
+             <div class="minute" style="position: absolute;">
+                1:20:29
+            </div>
+            </div>
+        <div class="a">
+            <div class="image-profil">
+                 <div class="modal" >
+                        <div class="image-profil" >
+                <img style="height: 50px;
+                        width: 50px;
+                        border-radius: 50px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        margin-top: 10px;" src="imaj2.jpg" alt="">
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur.</p></div> 
+                <img src="imaj2.jpg" alt="">
+            </div>
+            <div class="text-video-description">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </p>
+                <p> Nunc viverra imperdiet enim.</p>
+            </div>
+        </div>
+        </div>
+        <div class="card" style="position: relative;">                      
+             <div><img src="imaj7.jpg" alt="" class="video-image" >
+             <div class="minute" style="position: absolute;">
+                1:20:29
+            </div>
+            </div>
+        <div class="a">
+            <div class="image-profil">
+                 <div class="modal" >
+                        <div class="image-profil" >
+                <img style="height: 50px;
+                        width: 50px;
+                        border-radius: 50px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        margin-top: 10px;" src="imaj2.jpg" alt="">
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur.</p></div> 
+                <img src="imaj2.jpg" alt="">
+            </div>
+            <div class="text-video-description">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </p>
+                <p> Nunc viverra imperdiet enim.</p>
+            </div>
+        </div>
+        </div>
+        <div class="card" style="position: relative;">                      
+            <div><img src="imaj7.jpg" alt="" class="video-image" >
+             <div class="minute" style="position: absolute;">
+                1:20:29
+            </div>
+            </div>
+        <div class="a">
+            <div class="image-profil">
+                 <div class="modal" >
+                        <div class="image-profil" >
+                <img style="height: 50px;
+                        width: 50px;
+                        border-radius: 50px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        margin-top: 10px;" src="imaj2.jpg" alt="">
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur.</p></div> 
+                <img src="imaj2.jpg" alt="">
+            </div>
+            <div class="text-video-description">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </p>
+                <p> Nunc viverra imperdiet enim.</p>
+            </div>
+        </div>
+        </div>
+        <div class="card" style="position: relative;">                      
+             <div><img src="imaj7.jpg" alt="" class="video-image" >
+             <div class="minute" style="position: absolute;">
+                1:20:29
+            </div>
+            </div>
+        <div class="a">
+            <div class="image-profil">
+                 <div class="modal" >
+                        <div class="image-profil" >
+                <img style="height: 50px;
+                        width: 50px;
+                        border-radius: 50px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        margin-top: 10px;" src="imaj2.jpg" alt="">
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur.</p></div> 
+                <img src="imaj2.jpg" alt="">
+            </div>
+            <div class="text-video-description">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </p>
+                <p> Nunc viverra imperdiet enim.</p>
+            </div>
+        </div>
+        </div>
+        <div class="card" style="position: relative;">                      
+             <div><img src="imaj7.jpg" alt="" class="video-image" >
+             <div class="minute" style="position: absolute;">
+                1:20:29
+            </div>
+            </div>
+        <div class="a">
+            <div class="image-profil">
+                 <div class="modal" >
+                        <div class="image-profil" >
+                <img style="height: 50px;
+                        width: 50px;
+                        border-radius: 50px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        margin-top: 10px;" src="imaj2.jpg" alt="">
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur.</p></div> 
+                <img src="imaj2.jpg" alt="">
+            </div>
+            <div class="text-video-description">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </p>
+                <p> Nunc viverra imperdiet enim.</p>
+            </div>
+        </div>
+        </div>
+        <div class="card" style="position: relative;">                      
+            <div><img src="imaj7.jpg" alt="" class="video-image" >
+             <div class="minute" style="position: absolute;">
+                1:20:29
+            </div>
+            </div>
+        <div class="a">
+            <div class="image-profil">
+                 <div class="modal" >
+                        <div class="image-profil" >
+                <img style="height: 50px;
+                        width: 50px;
+                        border-radius: 50px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        margin-top: 10px;" src="imaj2.jpg" alt="">
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur.</p></div> 
+                <img src="imaj2.jpg" alt="">
+            </div>
+            <div class="text-video-description">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </p>
+                <p> Nunc viverra imperdiet enim.</p>
+            </div>
+        </div>
+        </div>
+        <div class="card" style="position: relative;">                      
+            <div><img src="imaj7.jpg" alt="" class="video-image" >
+             <div class="minute" style="position: absolute;">
+                1:20:29
+            </div>
+            </div>
+        <div class="a">
+            <div class="image-profil">
+                 <div class="modal" >
+                        <div class="image-profil" >
+                <img style="height: 50px;
+                        width: 50px;
+                        border-radius: 50px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        margin-top: 10px;" src="imaj2.jpg" alt="">
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur.</p></div> 
+                <img src="imaj2.jpg" alt="">
+            </div>
+            <div class="text-video-description">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </p>
+                <p> Nunc viverra imperdiet enim.</p>
+            </div>
+        </div>
+        </div>
+        
+      
+             
+
+      </div>  
+</body>
+</html>
